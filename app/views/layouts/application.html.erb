@@ -6,13 +6,19 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
   </head>
 
   <body>
-    <%= yield %>
-  <hr>
-  <%= link_to "Museums", root_path %>
-  <%= link_to "All artworks", artworks_path %>
-
+    <header>
+      <h1>ArtCity</h1>
+    </header>
+    <section class="gallery">
+      <%= yield %>
+    </section>
+    <footer>
+      <%= link_to "Museums", root_path %>
+      <%= link_to "All artworks", artworks_path %>
+    </footer>
   </body>
 </html>
