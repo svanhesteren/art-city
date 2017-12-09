@@ -1,0 +1,6 @@
+<h2><%= @artwork.name %></h2>
+<h3><%= @artwork.artist %></h3>
+<h4><%= link_to @artwork.museum.name, museum_path(@artwork.museum.id) %></h4>
+
+
+<%= image_tag @artwork.image_url %>
