@@ -13,12 +13,18 @@
  *= require_tree .
  *= require_self
  */
+
+
 body {
   text-align: center;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   font-family: 'Josefin Sans', sans-serif;
+}
+
+ul{
+  list-style: none;
 }
 
 header{
