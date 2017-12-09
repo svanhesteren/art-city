@@ -1,0 +1,41 @@
+<%= form_for @artwork do |f| %>
+  <ul>
+    <% @artwork.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+  </ul>
+
+  <ul>
+    <li>
+      <%= f.label :name %>
+      <%= f.text_field :name %>
+    </li>
+    <br>
+    <li>
+      <%= f.label :kind %>
+      <%= f.text_field :kind %>
+    </li>
+    <br>
+    <li>
+      <%= f.label :artist %>
+      <%= f.text_field :artist %>
+    </li>
+    <br>
+    <li>
+      <%= f.label :price %>
+      <%= f.number_field :price %>
+    </li>
+    <br>
+    <li>
+      <%= f.label :image_url %>
+      <%= f.text_field :image_url %>
+    </li>
+    <br>
+    <li>
+      <%= f.label :museum_id %>
+      <%= f.collection_select(:museum_id, Museum.all, :id, :name) %>
+    </li>
+    <br>
+    <%= f.submit (@artwork.new_record? ? "Create" : "Update") %>
+  </ul>
+<% end %>
