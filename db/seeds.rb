@@ -10,10 +10,10 @@
 Artwork.destroy_all
 Museum.destroy_all
 
-museum1 = Museum.create!(name:"Tate Modern", address: "London", image_url: "https://ixquick-proxy.com/do/spg/show_picture.pl?l=english&rais=1&oiu=http%3A%2F%2Fwww.tate.org.uk%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fwidth-1200%2Fpublic%2Fimages%2Fpeople-on-the-millennium-br_0.jpg&sp=f613d40216b55fe08258ca11997fa093")
-museum2 = Museum.create!(name:"Rijksmuseum", address:"Amsterdam", image_url: "https://ixquick-proxy.com/do/spg/show_picture.pl?l=english&rais=1&oiu=https%3A%2F%2Fwww.tours-tickets.com%2Fmedia%2F36706%2F001b_museums_tt_rijksmuseum2.jpg&sp=eef1969809b031907aa86ca3818da99d")
-museum3 = Museum.create!(name:"Louvre", address:"Paris", image_url:"https://ixquick-proxy.com/do/spg/show_picture.pl?l=english&rais=1&oiu=https%3A%2F%2Fmedia.ceetiz.com%2Factivity%2FCITPAR079%2Fthumbnails%2F642x450%2Fmusee-du-louvre-40.jpg&sp=5ebd59892cf4146f0b996c0e4b07a68e")
-museum4 = Museum.create!(name:"Hermitage", address:"St. Petersburg", image_url:"https://ixquick-proxy.com/do/spg/show_picture.pl?l=english&rais=1&oiu=http%3A%2F%2Fwww.saint-petersburg.com%2Fimages%2Fvirtual-tour%2Fhermitage3.jpg&sp=9b67731aeaf21f46520adfbafa426838")
+museum1 = Museum.create!(name:"Tate Modern", address: "London", image_url: "https://s14-eu5.ixquick.com/cgi-bin/serveimage?url=https%3A%2F%2Fmedia-cdn.tripadvisor.com%2Fmedia%2Fphoto-s%2F01%2Fcc%2F86%2F1e%2Ftate-modern-exterior.jpg&sp=f4261374e07c9d9b0b3ea0b18817b065")
+museum2 = Museum.create!(name:"Rijksmuseum", address:"Amsterdam", image_url: "https://s14-eu5.ixquick.com/cgi-bin/serveimage?url=http%3A%2F%2Fi.telegraph.co.uk%2Fmultimedia%2Farchive%2F02527%2Friks5_2527131b.jpg&sp=7a47f1513d4d8333be491c354830cb4c")
+museum3 = Museum.create!(name:"Louvre", address:"Paris", image_url:"https://s14-eu5.ixquick.com/cgi-bin/serveimage?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F8%2F82%2FLouvre_Cour_Carree.jpg%2F744px-Louvre_Cour_Carree.jpg&sp=3bd22bff61ed011b2c52ca6a6c0f3148")
+museum4 = Museum.create!(name:"Hermitage", address:"St. Petersburg", image_url:"https://s14-eu5.ixquick.com/cgi-bin/serveimage?url=http%3A%2F%2Fwww.saint-petersburg.com%2Fimages%2Fmuseums%2Fhermitage-museum%2Fstate-hermitage-museum-in-st-petersburg.jpg&sp=ca13a5b12ac643a27cb0ab16639c5392")
 
 # art = Artwork.create!(name:"", kind:"", artist:"", museum:, price:)
 art1 = Artwork.create!(name:"Nachtwacht", kind:"Painting", artist:"Rembrandt", museum:museum2, price:1_000_000_000, image_url: "https://www.lindanieuws.nl/cache/img/c-1272-712/wp-content/uploads/2017/06/HH-63577446-e1496392900273.jpg")
