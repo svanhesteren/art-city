@@ -34,7 +34,7 @@ class ArtworksController < ApplicationController
       render "edit"
     end
   end
-   
+
   def destroy
     @artwork = Artwork.find(params[:id])
     @artwork.destroy
@@ -45,7 +45,7 @@ class ArtworksController < ApplicationController
 
   def artwork_params
     params.require(:artwork).permit(:kind, :name, :artist, :price, :image_url, :museum_id)
-
+  end
 
 
 end

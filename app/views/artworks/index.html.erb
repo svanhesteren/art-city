@@ -3,3 +3,8 @@
 <% @artworks.each do |artwork| %>
   <p><%= link_to artwork.name, artwork_path(artwork.id) %></p>
 <% end  %>
+
+<br>
+<br>
+
+<%= link_to "Commit your own art!", new_artwork_path %>

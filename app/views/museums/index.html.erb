@@ -3,5 +3,3 @@
 <% @museums.each do |museum| %>
   <p><%=link_to museum.name, museum_path(museum.id)%></p>
 <% end %>
-
-<%= link_to "Commit your own art!", new_artwork_path %>
