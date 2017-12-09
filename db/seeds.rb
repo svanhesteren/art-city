@@ -18,3 +18,7 @@ museum4 = Museum.create!(name:"Hermitage", address:"St. Petersburg", image_url:"
 # art = Artwork.create!(name:"", kind:"", artist:"", museum:, price:)
 art1 = Artwork.create!(name:"Nachtwacht", kind:"Painting", artist:"Rembrandt", museum:museum2, price:1_000_000_000)
 art2 = Artwork.create!(name:"Mug", kind:"Statue", artist:"Sebastian van Hesteren", museum:museum4, price:15_000_000)
+art3 = Artwork.create!(name:"Melkmeisje", kind:"Painting", artist:"Johannes Vermeer", museum: museum2, price:500_000_000)
+# art4 = Artwork.create!(name:"", kind:"", artist:"", museum:, price:)
+# art5 = Artwork.create!(name:"", kind:"", artist:"", museum:, price:)
+# art6 = Artwork.create!(name:"", kind:"", artist:"", museum:, price:)
