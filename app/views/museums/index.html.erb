@@ -1,8 +1,8 @@
 <h1>Welcome</h1>
-<h2>Have a look at all our beautifull museums</h2>
+<h2>Have a look at all our beautiful museums</h2>
 
 <% @museums.each do |museum| %>
 <ul>
-  <li><%= link_to museum.name, museum_path %></li>
+  <li><%=museum.name%></li>
 </ul>
 <% end %>

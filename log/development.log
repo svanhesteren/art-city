@@ -273,3 +273,39 @@ puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
 puma (3.11.0) lib/puma/server.rb:438:in `process_client'
 puma (3.11.0) lib/puma/server.rb:302:in `block in run'
 puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/museums" for 127.0.0.1 at 2017-12-09 12:26:24 +0100
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MuseumsController#index as HTML
+  Rendering museums/index.html.erb within layouts/application
+  [1m[36mMuseum Load (1.1ms)[0m  [1m[34mSELECT "museums".* FROM "museums"[0m
+  Rendered museums/index.html.erb within layouts/application (23.7ms)
+Completed 500 Internal Server Error in 44ms (ActiveRecord: 7.3ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"museums"}, missing required keys: [:id]):
+    3: 
+    4: <% @museums.each do |museum| %>
+    5: <ul>
+    6:   <li><%= link_to museum.name, museum_path %></li>
+    7: </ul>
+    8: <% end %>
+  
+app/views/museums/index.html.erb:6:in `block in _app_views_museums_index_html_erb___3502566618830749985_70244229311000'
+app/views/museums/index.html.erb:4:in `_app_views_museums_index_html_erb___3502566618830749985_70244229311000'
+Started GET "/museums" for 127.0.0.1 at 2017-12-09 12:26:50 +0100
+Processing by MuseumsController#index as HTML
+  Rendering museums/index.html.erb within layouts/application
+  [1m[36mMuseum Load (0.8ms)[0m  [1m[34mSELECT "museums".* FROM "museums"[0m
+  Rendered museums/index.html.erb within layouts/application (15.8ms)
+Started GET "/museums" for 127.0.0.1 at 2017-12-09 12:26:51 +0100
+Processing by MuseumsController#index as HTML
+  Rendering museums/index.html.erb within layouts/application
+  [1m[36mMuseum Load (1.5ms)[0m  [1m[34mSELECT "museums".* FROM "museums"[0m
+  Rendered museums/index.html.erb within layouts/application (23.3ms)
+Completed 200 OK in 1257ms (Views: 1248.2ms | ActiveRecord: 7.2ms)
+
+
+Completed 200 OK in 257ms (Views: 242.7ms | ActiveRecord: 13.1ms)
+
+
